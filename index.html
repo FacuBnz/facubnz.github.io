@@ -24,7 +24,7 @@
         <div>
             <div class="profile">
                 <h1>Facundo Benitez • Backend developer</h1>
-                <p>Creating robust and scalable solutions for <strong>+2</strong> years.</p>
+                <p>Creating robust and scalable solutions for <strong id="years-experience"></strong> years.</p>
                 <p>University Technician in Programming, <span><a href="https://frh.utn.edu.ar/" target="_blank" rel="noopener noreferrer">UTN</a></span>.</p>
                 <p>Buenos Aires, Argentina.</p>
             </div>
@@ -38,6 +38,12 @@
             </div>
         </div>
     </div>
+    <script>
+        const startYear = 2022;
+        const currentYear = new Date().getFullYear();
+        const years = currentYear - startYear;
+        document.getElementById("years-experience").textContent = `+${years}`;
+    </script>
 </body>
 
 </html>
